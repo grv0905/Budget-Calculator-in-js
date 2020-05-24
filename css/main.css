@@ -1,0 +1,143 @@
+ :root {
+  --mainWhite: #ffffff;
+  --mainDark: #333333;
+  /*--mainGreen: #2e86de;*/
+  --mainRed: #ee5253;
+  --mainBlue: #2e86de;
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+.budget-feedback,
+.expense-feedback {
+  display: none;
+}
+.nav-bg-color{
+  background-color:var(--mainBlue) !important; 
+}
+nav{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: var(--mainRed);
+}
+.h1{
+  font-size: 30px;
+}
+.budget-form {
+  border: 2px solid var(--mainBlue);
+  padding: 20px;
+  border-radius: 5px;
+}
+.expense-form {
+  border: 2px solid var(--mainRed);
+  padding: 20px;
+  border-radius: 5px;
+}
+.budget-submit {
+  background: transparent;
+  border: 2px solid var(--mainBlue);
+  color: var(--mainGreen);
+}
+.expense-submit {
+  background: transparent;
+  border: 2px solid var(--mainRed);
+  color: var(--mainRed);
+}
+.expense-submit:hover {
+  background: var(--mainRed);
+  color: var(--mainWhite);
+}
+.budget-submit:hover {
+  background: var(--mainBlue);
+  color: var(--mainDark);
+}
+
+.budget-input {
+  border: 1px solid var(--mainBlue) !important;
+}
+.expense-input {
+  border: 1px solid var(--mainRed) !important;
+}
+.expense-amount,
+.expense-title {
+  color: var(--mainRed);
+}
+.edit-icon {
+  color: var(--mainBlue);
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none !important;
+}
+.delete-icon {
+  color: var(--mainRed);
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none !important;
+}
+.edit-icon:hover {
+  color: var(--mainBlue);
+}
+.delete-icon:hover {
+  color: var(--mainRed);
+}
+.showItem {
+  display: block;
+}
+.info-title {
+  font-size: 30px;
+}
+.budget {
+  font-size: 30px;
+  color: var(--mainBlue);
+}
+.expense {
+  font-size: 30px;
+  color: var(--mainRed);
+}
+.balance {
+  font-size: 30px;
+}
+.budget-icon,
+.expense-icon,
+.balance-icon {
+  font-size: 40px;
+  color: var(--mainBlue);
+}
+.showRed {
+  color: var(--mainRed);
+}
+.showBlue {
+  color: var(--mainBlue);
+}
+.showBlack {
+  color: var(--mainDark);
+}
+@media screen and (min-width: 992px) {
+  .budget {
+    font-size: 40px;
+    color: var(--mainBlue);
+  }
+  .expense {
+    font-size: 40px;
+    color: var(--mainRed);
+  }
+  .balance {
+    font-size: 40px;
+  }
+  .budget-icon,
+  .expense-icon,
+  .balance-icon {
+    font-size: 65px;
+    color: var(--mainBlue);
+  }
+}
+.list-item {
+  flex: 0 0 33.33%;
+  text-align: center;
+}
+.expense-item {
+  height: 35px;
+}
